@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <BigBridge_EffectConnectProductFilter>
+            <active>true</active>
+            <codePool>community</codePool>
+            <version>0.1.0</version>
+        </BigBridge_EffectConnectProductFilter>
+    </modules>
+</config>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <BigBridge_EffectConnectProductFilter>
+            <version>0.1.0</version>
+        </BigBridge_EffectConnectProductFilter>
+    </modules>
+    <global>
+        <helpers>
+            <effectconnectproductfilter>
+                <class>BigBridge_EffectConnectProductFilter_Helper</class>
+            </effectconnectproductfilter>
+        </helpers>
+        <models>
+            <effectconnectproductfilter>
+                <class>BigBridge_EffectConnectProductFilter_Model</class>
+                <resourceModel>effectconnectproductfilter_mysql4</resourceModel>
+            </effectconnectproductfilter>
+            <plus>
+                <rewrite>
+                    <export_products>BigBridge_EffectConnectProductFilter_Model_Plus_Export_Products</export_products>
+                </rewrite>
+            </plus>
+        </models>
+        <resources>
+            <effectconnectproductfilter_setup>
+                <setup>
+                    <module>BigBridge_EffectConnectProductFilter</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </effectconnectproductfilter_setup>
+        </resources>
+    </global>
+</config>
